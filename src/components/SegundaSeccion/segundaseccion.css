@@ -1,0 +1,48 @@
+.sec2{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 75vh;
+    margin: 2rem;
+    background-color: #fa93cc;
+    background-size: cover;
+    border-radius: 0.5rem;
+    background-image: url(../../imagenes/imgc.png);
+}
+.cont-naruto{
+    display: flex;
+    align-items: center;
+    width: 75vw;
+}
+.cont-txt2 h1{
+    font-size: 65px;
+}
+.sub-title{
+    font-size: 25px;
+}
+.forever{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.boton{
+    background-color: #fa93cc;
+    width: 15rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.logo{
+    height: 4rem ;
+}
+@media (min-width: 320px) and (max-width: 894px){
+    .cont-txt2 h1{
+        font-size: 30px;
+    }
+}
