@@ -45,4 +45,19 @@ a{
     .cont-txt2 h1{
         font-size: 30px;
     }
+    .sec2{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        margin: 0;
+        background-image: url(../../imagenes/7d0eea20d6c53007b24b7e2c4342b819\ 1.png);
+        background-size: cover;
+    } 
+    .forever{
+        display: none;
+    }
+    h1, p{
+        text-align: center;
+    }
+
 }

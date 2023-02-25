@@ -12,12 +12,32 @@ header{
 .cont-padre-nav{
     display: flex;
     justify-content: space-between;
-    width: 90vw;
+    width: 95vw;
     height: 7vh;
+}
+.menu-png{
+    width: 9rem;
 }
 nav{
     display: flex;
     align-items: center;
     gap: 1rem;
 
+}
+@media (min-width: 320px) and (max-width: 894px){
+    .cont-padre-nav{
+        position: absolute;
+        max-width: 100vw;
+    }
+    .menu-png{
+        height: 4rem;
+    }
+    .logo{
+        margin-top: 0.7rem;
+    }
+    .cont-txt2{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
 }

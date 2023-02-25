@@ -7,11 +7,9 @@ import './App.css';
 function App() {
   return (
     <body>
-        <header>
       <div>
-        <NavBar/>
+      <NavBar/>
       </div>
-    </header>
       <main>
         <div class="cont-padre-main">
             <PrimeraSeccion/>

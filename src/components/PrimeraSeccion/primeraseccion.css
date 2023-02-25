@@ -16,9 +16,6 @@
     flex-direction: column;
 
 }
-.menu-png{
-    width: 4rem;
-}
 h2, p, h4{
     display: flex;
     margin: 5px;
@@ -34,9 +31,11 @@ h2, p, h4{
 @media (min-width: 320px) and (max-width: 894px){
     .img1, .img2{
         display: none;
-
     }
     .cont-padre-text{
         margin-left: 0;
+    }
+    .sec1{
+        display: none;
     }
 }
