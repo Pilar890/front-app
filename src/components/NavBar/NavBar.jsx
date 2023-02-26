@@ -7,12 +7,9 @@ import ImagenA from '../../imagenes/Menu.svg'
 
 export default function NavBar() {
   return (
-    <div class="cont-padre-nav">
-        <img class="menu-png" src={ImagenA} alt=""/>
-        <img class="logo" src={ImagenB} alt=""/>
-    {/* <div class="logo-container">
-        <img class="logo" src={ImagenB} alt=""/>
-    </div> */}
+    <div className="cont-padre-nav">
+        <img className="menu-png" src={ImagenA} alt=""/>
+        <img className="logo" src={ImagenB} alt=""/>
     </div>
   )
 }
