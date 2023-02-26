@@ -29,38 +29,38 @@ export default function Input() {
                     <fieldset>
                         <legend>Name</legend>
                         <label htmlFor='name'>
-                            <input  class="inpuut" type="text" id='name' value={name} onChange={(e)=> setName(e.target.value)} required/>
-                            <img class="loguitos" src={Imageng} alt=""/>
+                            <input  className="inpuut" type="text" id='name' value={name} onChange={(e)=> setName(e.target.value)} required/>
+                            <img className="loguitos" src={Imageng} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Email</legend>
-                        <label for='email'>
-                            <input  class="inpuut" type="email" name="email" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
-                            <img class="loguitos" src={Imagenf} alt=""/>
+                        <label htmlFor='email'>
+                            <input  className="inpuut" type="email" name="email" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
+                            <img className="loguitos" src={Imagenf} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Password</legend>
-                        <label for='password'>
-                            <input class="inpuut" type="password" name="password" value={password}  onChange={(e)=> setPassword(e.target.value)} required/>
-                            <img class="loguitos" src={Imagenh} alt=""/>
+                        <label htmlFor='password'>
+                            <input className="inpuut" type="password" name="password" value={password}  onChange={(e)=> setPassword(e.target.value)} required/>
+                            <img className="loguitos" src={Imagenh} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Confirm password</legend>
-                        <label for='password'>
-                            <input class="inpuut" type="password" name="rpassword" value={rpassword} onChange={(e)=> setRpassword(e.target.value)} required/>
-                            <img class="loguitos" src={Imagenh} alt=""/>
+                        <label htmlFor='password'>
+                            <input className="inpuut" type="password" name="rpassword" value={rpassword} onChange={(e)=> setRpassword(e.target.value)} required/>
+                            <img className="loguitos" src={Imagenh} alt=""/>
                         </label>
                     </fieldset>
-                    <div class="cont-check">
+                    <div className="cont-check">
                         <div className='checkk'>
                             <input className='checkk' type="checkbox" name="name" required/>
                             Send notification to my email
                         </div>
                     </div> 
-                     <input class="enviar" type="submit" value="Sign up"/> 
+                     <input className="enviar" type="submit" value="Sign up"/> 
                 </form>
             </div>
   )
