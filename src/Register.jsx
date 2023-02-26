@@ -6,13 +6,13 @@ import Imagenj from '../src/imagenes/Rectangle8.png'
 
 function Register() {
   return (
-    <main>
+    <main className='main-register'>
       <div className='cont-padre'>
        <Titulo/>
        <Input/>
        <Boton/>
       </div>
-      <img class="img-rectangulo" src={Imagenj} alt=""/>
+      <img className="img-rectangulo" src={Imagenj} alt=""/>
     </main>
   );
   } 

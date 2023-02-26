@@ -2,15 +2,15 @@
 import NavBar from "./components/NavBar/NavBar";
 import PrimeraSeccion from "./components/PrimeraSeccion/PrimeraSeccion"
 import SegundaSeccion from "./components/SegundaSeccion/SegundaSeccion"
-import './App.css';
+import './Hero.css';
 
-function App() {
+function Hero() {
   return (
     <body>
       <div>
       <NavBar/>
       </div>
-      <main>
+      <main className="main-hero">
         <div class="cont-padre-main">
             <PrimeraSeccion/>
             <SegundaSeccion/>
@@ -19,4 +19,4 @@ function App() {
     </body>
   );
 }
-export default App;
+export default Hero;

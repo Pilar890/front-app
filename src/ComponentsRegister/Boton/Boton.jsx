@@ -9,9 +9,9 @@ export default function Boton() {
         <img src={Imageni} alt="logo-google"/>
         <a href="/">Sign in with Google</a>
     </div>
-    <p>Already have an account? <a href="/">Log in</a>
+    <p className='p-3'>Already have an account? <a className='p-3-a' href="/">Log in</a>
     </p>
-    <p>Go back to <a href="/">home page</a></p>
+    <p className='p-3'>Go back to <a className='p-3-a' href="/">home page</a></p>
   </div>
   )
 }

@@ -12,7 +12,7 @@ export default function PrimeraSeccion() {
             <img className="img2" src={ImagenC} alt=""/>
         </div>
         <div className="cont-padre-text">
-            <div className="cont-txt">
+            <div className="cont-txt1">
                 <h2>Trigun Stampede</h2>
                 <p>Manga</p>
                 <h4>TRIGUN is a popular action manga by Yasuhiro Nightow that follows the story of Vash Stampede, a legendary gunfighter and pacifist with a huge bounty on his head.</h4>
