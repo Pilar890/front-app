@@ -14,6 +14,14 @@ export default function Input() {
     const onSubmit = (e) => {
         e.preventDefault() //para evitar que se recargue la pagina
         console.log({name,email,password})
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({name,email,password})
+        }
+        fetch('http://localhost:8080/users', requestOptions)
+            .then(response => response.json())
+            .then(data => {console.log(data)});
     }
   return (
            <div className="cont-form">
