@@ -4,13 +4,13 @@ import './segundaseccion.css'
 
 export default function SegundaSeccion() {
   return (
-    <div class="sec2">
-                <div class="cont-naruto">
-                    <div class="cont-txt2">
+    <div className="sec2">
+                <div className="cont-naruto">
+                    <div className="cont-txt2">
                         <h1>Live the emotion of the manga</h1>
-                        <p class="sub-title">Find the perfect manga for you</p>
-                        <p class="forever">#MingaForever </p>
-                        <div class="boton">
+                        <p className="sub-title">Find the perfect manga for you</p>
+                        <p className="forever">#MingaForever </p>
+                        <div className="boton">
                             <a href="/">Explore</a>
                         </div>
                     </div>

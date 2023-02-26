@@ -1,47 +1,58 @@
-
+import React,{useState} from 'react'
 import './input.css'
+import Imagenf from '../../imagenes/@.png'
+import Imageng from '../../imagenes/profile.jpg'
+import Imagenh from '../../imagenes/lock1.png'
 
-import React from 'react'
 
 export default function Input() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [rpassword, setRpassword] = useState('');
+    // console.log({name, email, password, rpassword})
+    const onSubmit = (e) => {
+        e.preventDefault() //para evitar que se recargue la pagina
+        console.log({name,email,password})
+    }
   return (
            <div className="cont-form">
-                <form>
+                <form onSubmit={onSubmit}>
                     <fieldset>
                         <legend>Name</legend>
-                        <label>
-                            <input class="inpuut" type="text" name="name">
-                            <img class="loguitos" src="./imagenes/profile.jpg" alt="">
+                        <label htmlFor='name'>
+                            <input  class="inpuut" type="text" id='name' value={name} onChange={(e)=> setName(e.target.value)} required/>
+                            <img class="loguitos" src={Imageng} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Email</legend>
-                        <label>
-                            <input  class="inpuut" type="email" name="name">
-                            <img class="loguitos" src="./imagenes/@.png" alt="">
+                        <label for='email'>
+                            <input  class="inpuut" type="email" name="email" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
+                            <img class="loguitos" src={Imagenf} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Password</legend>
-                        <label>
-                            <input class="inpuut" type="password" name="name">
-                            <img class="loguitos" src="./imagenes/lock1.png" alt="">
+                        <label for='password'>
+                            <input class="inpuut" type="password" name="password" value={password}  onChange={(e)=> setPassword(e.target.value)} required/>
+                            <img class="loguitos" src={Imagenh} alt=""/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Confirm password</legend>
-                        <label>
-                            <input class="inpuut" type="password" name="name">
-                            <img class="loguitos" src="./imagenes/lock1.png" alt="">
+                        <label for='password'>
+                            <input class="inpuut" type="password" name="rpassword" value={rpassword} onChange={(e)=> setRpassword(e.target.value)} required/>
+                            <img class="loguitos" src={Imagenh} alt=""/>
                         </label>
                     </fieldset>
                     <div class="cont-check">
-                        <div>
-                            <input type="checkbox" name="name">
+                        <div className='checkk'>
+                            <input className='checkk' type="checkbox" name="name" required/>
                             Send notification to my email
                         </div>
-                    </div>
-                    <input class="enviar" type="submit" value="Sign up ">
+                    </div> 
+                     <input class="enviar" type="submit" value="Sign up"/> 
                 </form>
             </div>
   )
