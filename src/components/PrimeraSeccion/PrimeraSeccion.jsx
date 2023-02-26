@@ -5,6 +5,7 @@ import ImagenD from '../../imagenes/imgd.png'
 
 export default function PrimeraSeccion() {
   return (
+
     <div className="sec1">
         <div className='cont-image'>
             <img className="img1" src={ImagenD} alt=""/>
