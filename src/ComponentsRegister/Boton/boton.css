@@ -1,0 +1,41 @@
+.cont-txt2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-google{
+    border: 1px solid gray;
+    padding: 0.8rem;
+    width: 26rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-google a{
+    text-decoration: none;
+    color: gray;
+}
+a{
+    text-decoration: none;
+    color: palevioletred;
+    
+}
+.p-3{
+    color: black;
+}
+.p-3-a{
+    margin-left: 7px;
+
+}
+
+@media (min-width: 320px) and (max-width: 894px){
+    .cont-google{
+       width: 15rem;
+    }
+    .enviar{
+        width: 15rem;
+    }
+}
